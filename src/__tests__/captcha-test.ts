@@ -1,7 +1,7 @@
 /// <reference path="../typings/jest/jest.d.ts"/>
 
 class Captcha {
-	generate(pattern, left, right, operator) {
+	generate(pattern: number, left: number, right: number, operator: number): string {
 		var output = "";
 		var numberString = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
 		var operatorString = ['+', '-', '*'];
